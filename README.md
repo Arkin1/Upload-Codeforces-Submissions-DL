@@ -9,7 +9,7 @@ Two equivalent implementations are included:
 
 Both take the same inputs and produce the same output: `data/submissions/<handle>_submissions.json`.
 
-Please complete this form (https://docs.google.com/forms/d/e/1FAIpQLSeu7HDn3IjlPVEXwVW01DMtxURptSzq3nopQ0eUs2PZ1Ric8A/viewform) and upload the `<handle>_submissions.json` file.
+Please fill this [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSeu7HDn3IjlPVEXwVW01DMtxURptSzq3nopQ0eUs2PZ1Ric8A/viewform) and upload the `<handle>_submissions.json` file.
 
 ## Prerequisites
 
@@ -37,7 +37,8 @@ brew install curl jq
 
 ## Usage
 
-### PowerShell
+### Windows
+#### PowerShell
 
 ```powershell
 .\get_submissions.ps1 <handle> -ApiKey <your_key> -ApiSecret <your_secret>
@@ -58,7 +59,8 @@ Unblock-File -Path .\get_submissions.ps1
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 
-### Bash
+### Linux / MacOS
+#### Bash
 
 ```bash
 chmod +x get_submissions.sh
